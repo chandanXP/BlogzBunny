@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link rel="icon" type="image/x-icon" href="/public/static/logo/favicon.ico">
+      
+</head>
+<body>
+     <h1>
+          Hello world!
+     </h1>
+     <h2 id="title" style="user-select: all">Copy to clipboard - JavaScript button</h2>
+     <input type="text" id="myInp">
+     <button id="btnCopy">Copy</button>
+     <br>
+     <code id="myCodes">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ullam modi possimus.
+     </code>
+     <input type="text" value="Hello Coders" id="myCode">
+     <button id="codebtn">Copy code</button>
+     <!-- <img src="/public/static/img/edu-lauton-TyQ-0lPp6e4-unsplash.jpg" alt=""> -->
+     <!-- Go to www.addthis.com/dashboard to customize your tools --> 
+     <div class="addthis_inline_share_toolbox"></div>
+     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f281643d433da23"></script>
+
+      
+</body>
+<script type="text/javascript">
+     const myInp = document.getElementById("myInp");
+     const btnCopy = document.getElementById("btnCopy");
+     const myCode = document.getElementById("myCode");
+     const codebtn = document.getElementById("codebtn");
+
+     btnCopy.onclick = function(){
+          //select
+          myInp.select();
+
+
+          //copy text
+          document.execCommand("copy");
+
+
+     };
+     codebtn.onclick = function(){
+          myCode.select();
+
+          document.execCommand("copy");
+     }
+
+
+
+</script>
+<script src="/public/main.js"></script>
+</html> 

@@ -1,0 +1,124 @@
+*{
+     margin: 0px;
+     padding: 0px;
+}
+
+.containers{
+     /* border: 2px solid red; */
+     margin-top: 75px;
+     height: 120vh;
+     width: 100%;
+     background-color:  #1BA098 ;
+     padding-top: 30px;
+}
+#signupbox{
+     /* border: 2px solid blue; */
+     border-radius: 8px;
+     height: 85vh;
+     width: 29vw;
+     margin: auto;
+     /* margin-top: 30px; */
+     padding: 45px;
+     background-color: #f3e5ab ;
+     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+
+}
+.heading i{
+     display: block;
+     font-size: 45px;
+     text-align: center;
+     color: #1f456e;
+}
+
+#signupbox h1{
+      text-align: center;
+      margin-bottom: 25px;
+      font-family: 'Ubuntu', sans-serif;
+      color: #1f456e;
+
+}
+ 
+.setaccount input{
+     padding: 5px;
+     width: 350px;
+     border: 1px solid #ddd;
+     font-size: 16PX;
+     margin-bottom: 5px;
+
+}
+.setaccount #signup{
+     margin-top: 0px ;
+     font-family: 'Ubuntu', sans-serif;
+     /* display: flex; */
+     /* flex-direction: row; */
+}
+
+#signup p{
+     margin: 0px;
+}
+
+.setaccount #signup i{
+     font-size: 18px;
+     margin-right: 5px;
+}
+
+.new #signup{
+     margin-top: 15px;
+     font-family: 'Ubuntu', sans-serif;
+
+}
+
+.new #signup .radio{
+    display: flex;
+    margin: 10px 0px;
+    margin: 10px 0px;
+}
+ .new #signup .radio input{
+
+     margin-left: 5px;
+   margin-right: 30px;
+  }  
+
+.creatButtons .btn{
+     margin-top: 30px;
+     width: 200px;
+     padding: 3px;
+     border-radius: 3px;
+     border: 1px solid #ddd;
+     font-size: 18px;
+     margin-bottom: 60px;
+     font-family: 'Bree Serif', serif;
+     color: white;
+     background-color: #1f456e;
+     
+
+}
+.creatButtons .btn:hover{
+      cursor: pointer;
+      border: 1px solid white;
+      opacity: 0.9;
+      transition: 0.4s;
+     
+
+}
+.goToLogin{
+     font-family: 'Roboto Slab', serif;
+     font-size: 18px;
+
+}
+.goToLogin a{
+     text-decoration: none;
+     font-size: 18px;
+     background-color: #1f456e;
+     color: white;
+     padding: 2px;
+     border-radius: 3px;
+     
+     
+}
+.goToLogin a:hover{
+     cursor: pointer;
+      opacity: 0.9;
+      transition: 0.4s;
+      
+}

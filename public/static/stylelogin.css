@@ -1,0 +1,129 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+}
+
+#container{
+     /* border: 2px solid blue; */
+     margin-top: 75px;
+     height: 90vh;
+     width: 100%;
+     padding: 30px;
+     background-color:  #1BA098 ;
+}
+
+.form{
+     /* border: 2px solid red; */
+     height: 65vh;
+     width: 430px;
+     padding: 50px 50px;
+     border-radius: 8px;
+     margin: auto;
+     background-color: #f3e5ab ;
+     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3);
+
+}
+.form h1{
+     text-align: center;
+     margin-bottom: 35px;
+     font-family: 'Titillium Web', sans-serif;
+     color: #1f456e;
+
+}
+.form input{
+     width: 300px;
+     padding:  8px;
+     /* padding-left: 0px; */
+     /* margin-left: 0px; */
+     /* outline: none; */
+     /* background: none; */
+     border-radius: 3px;
+     
+     /* background-color: transparent; */
+     border: 1px solid #ddd;
+     font-family: 'Titillium Web', sans-serif;
+     font-size: 16px;
+}
+
+input #myLogin{
+     padding-left: 20px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+     color: #1f456e;
+     font-family: 'Titillium Web', sans-serif;
+     font-size: 16px;
+     margin-left: 0px;
+     padding-left: 0px;
+}
+
+.form #text{
+     margin-bottom: 10px;
+}
+
+.form #text p{
+     margin-top: 25px;
+     font-family: 'Ubuntu', sans-serif;
+     /* margin-left: 25px; */
+     margin-bottom: 3px;
+     
+}
+
+.form #pass p{
+     margin-left: 25px;
+}
+
+.form  #forgot_password{
+     
+     display: block;
+     margin-bottom: 10px;
+     text-decoration: none;
+     color: black;
+     font-family: 'Ubuntu', sans-serif;
+     /* margin-left: 25px; */
+
+}
+.form i{
+     
+     width: 1.2em; 
+     font-size: 20px;
+
+}
+.form .btn{
+     margin-bottom: 20px;
+     width: 97%;
+     padding: 4px;
+     border-radius: 3px;
+     outline: none;
+     font-size: 20px;
+     border: 0px solid none;
+     font-family: 'Bree Serif', serif;
+     color: white;
+     background-color: #1f456e;
+     border: 0px solid #1f456e;
+}
+.btn:hover{
+     cursor: pointer;
+     opacity: 0.9;
+     transition: 0.4s;
+}
+.form .signup p{
+     font-size: 18px;
+     
+}
+.form .signup a{
+     text-decoration: none;
+     color: white;
+     background-color: #1f456e;
+     border-radius: 3px;
+     padding: 3px;
+     
+}
+.form .signup a:hover{
+     cursor: pointer;
+     opacity: 0.9;
+     transition: 0.4s;
+     
+}
+ 

@@ -1,0 +1,76 @@
+extends base.pug
+
+block scripts
+block style
+     style 
+          include ../public/static/home.css
+
+block content
+               section#couniversal
+                    hr#first
+                    .banner
+                         p Welcome to the best website of India     
+                         //- img(src="/public/static/img/edu-lauton-TyQ-0lPp6e4-unsplash.jpg", alt="Connection Problem")             
+                    //-body container
+                    section#bodycontent
+                         //-blog posts container
+                         .blogpost
+                              h2 What is a "HTTP error 404"?
+                              hr#h2    
+                              img(src="../public/static/img/erore.jpg", alt="404 error article")
+                              p The HTTP error 404, or more commonly called "404 error", means that the page you are trying to open could not be found on the server. This is a client-side incident which means either the page has been deleted or moved, and the URL has not been modified accordingly, or that you have misspelled the URL. In other words, this means that there is no web page corresponding to the entered URL. In addition to the 404 error, there are other similar errors, such as the 500 errors, which we have discussed in another article in this blog. 
+                              h3 How can I recognize the 404 error on my online store's website?
+                              p This error message may appear in different ways on your computer. Keep in mind that pages of this type can be completely modified by the domain's, which is also desirable because, in the event of an incident, we can offer our users an alternative so as to not abandon the website. These messages may appear in different ways, but there are a few recurring words that will help you know if the accident occurred is one of them.
+                              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, ea. Eum ad corrupti illum corporis, repudiandae quae odit, eius totam dolor quis maiores autem tempora atque porro minus suscipit rerum delectus! In ab nostrum quo, consectetur consequuntur fuga quae qui praesentium magnam mollitia enim quas explicabo nemo quidem maxime maiores suscipit adipisci dicta laboriosam rerum tempora alias impedit! Eligendi quaerat aperiam, fugit optio ipsum adipisci veniam ipsam quas, iste explicabo iure consequatur dolorum distinctio rem cumque omnis! Magnam, consectetur obcaecati.
+                              p The error message may appear as follows:
+                               
+                                   ul
+                                        li Error 404
+                                        li 404 not found
+                                        li The requested URL was not found on the server.
+                                        li HTTP Error 404
+                                        li Error 404: page not found
+                              p I want anchors of navbar should glow with respect to the page.
+                              br
+                              a.new(href="/bankingApp") ScrollTest
+                              br
+
+                              a(href="#") Back To Top
+                               
+                         //-aside container
+                         .aside
+                              //-search container
+                              .searchbar
+                                   p Blog404 Search 
+                                   //- search bar
+                                   <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+                                   //- list of blog topics
+                                   <ul id="myUL">
+                                   <li><a href="#">Adele</a></li>
+                                   <li><a href="#">Bollywood Blogs</a></li>
+                                   <li><a href="#">Educational Blogs</a></li>
+                                   <li><a href="#">Foods Blogs</a></li>
+                                   <li><a href="#">Sports Blogs</a></li>
+                                   <li><a href="#">Travel Blogs</a></li>
+                                   <li><a href="#">Web Series Blogs</a></li>
+                                   </ul>
+      
+                              hr.line                 
+                    
+                              #socials
+                                   p Follow us on:
+                                   #social_media
+                                        a(href="https://www.instagram.com/ch4nd4n22/")
+                                             #follows
+                                                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        a(href="https://www.facebook.com/profile.php?id=100008397492798")
+                                             #follows
+                                                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                                        a(href="https://twitter.com/yo4chandan")
+                                             #follows
+                                                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        a(href="/")
+                                             #follows
+                                                  <i class="fa fa-envelope" aria-hidden="true" fa-4x></i>
+                    hr                              
+                    
