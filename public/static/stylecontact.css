@@ -3,17 +3,25 @@
      margin: 0px;
      /* height: 0px;
      width: 0px; */
+     /* right: 0px!important;
+     top: 0px!important; */
+     /* box-sizing: border-box; */
      
 }
- 
+/* body{
+     margin-top: 0px!important;
+     border: 2px solid red;
+} */
 .containers{
      margin-top: 75px;
+     /* width: 100vw!important; */
+     /* border: 2px solid red; */
 }
 
 #contact_banner{
      /* border: 2px solid black; */
      /* position: absolute; */
-     margin-top: 105px;
+     margin-top: 115px;
      height: 20vh;
      width: 100%;
      background-color:  #1BA098 ;
@@ -23,42 +31,11 @@
 
 #contact_banner p{
      text-align: center;
-     /* background-color:  #1BA098 ; */
      color: #1f456e;
      font-size: 3.0rem;
-     /* margin: 25px; */
      font-family: 'Roboto Slab', serif;
      
 }
-#contact_banner  #get_started{
-     margin: auto;
-     color: white;
-     padding: 10px;
-     width: 150px;
-     /* align-items: center; */
-     /* justify-content: center; */
-     /* align-content: center; */
-     border: 2px solid #1f456e ;
-     display: block;
-     border-radius: 4px;
-     background-color: #1f456e;
-     outline: none;
-     font-family: 'Bree Serif', serif;
-     margin-top: 30px;
-     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-     
-}
-
-
-
-#contact_banner  #get_started:hover{
-     border: 1px solid white;
-     font-size: 14px;
-     cursor: pointer;
-     
-     
-}
-
 .cons {
      /* border: 2px solid red; */
      height: 85px;
@@ -73,21 +50,22 @@
      color: #1f456e;
      /* border: 2px solid black; */
      justify-content: center;
-     padding: 15px;
-     width: 500px;
+     padding: 28px;
+     width: auto;
      font-family: 'Ubuntu', sans-serif;
 
 }
-#midsections{
+.midsections{
      display: flex;
      /* border: 2px solid green; */
      background-color:  #1BA098 ;
      height: 100vh;
      padding-top: 5vh;
+     width: 100%;
      
 
 }
-#midsections .myForm{
+.midsections .myForm{
      height: 60vh;
      width: 100%;
      background-color: #f3e5ab ;
@@ -99,7 +77,7 @@
 }
 
 
-#midsections #myInput{
+.midsections #myInput{
       display: flex;
       flex-direction: column;
       margin: 10px 10px;
@@ -119,13 +97,13 @@
      font-family: 'Titillium Web', sans-serif;
 }
 
-#midsections  #myButton{
+.midsections  #myButton{
      margin-left: 85px;
      width: 150px;
      height: 40px;
      border-radius: 3px;
 } 
-#midsections #other_media{
+.midsections #other_media{
      height: 50vh;
      width: 40%;
      /* border: 2px solid blue; */
@@ -140,7 +118,9 @@
 
 #form{
      /* border: 2px solid violet; */
-     margin: 25px 25px;
+     /* margin: 25px 25px; */
+     margin: auto;
+
      /* display: flexbox;
      flex-direction: column; */
      width: 50vw;
@@ -198,4 +178,70 @@
      opacity: 0.9;
      transition: 0.4s;
 }
- 
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 820px) {
+      
+     .midsections{
+          display: flex;
+          flex-direction: column;
+          padding: 25px;
+          margin: auto;
+     }
+
+     #form{
+           
+          height: auto;
+          width: auto;
+          margin-left: 0px;
+          margin: 20px auto;
+     }
+     #form .myForm{
+           
+          height: auto;
+          padding-bottom: 30px;
+           
+     }
+     #form form input{
+          width: 70vw!important;
+           
+     }
+
+     #other_media {
+           
+          width: 100%!important;
+          height: auto!important;
+          margin: 0px auto !important;
+          padding-bottom: 20px;
+           
+     }
+}
+@media only screen and (max-width: 500px) {
+     .cons h1{
+          font-size: 1.4rem;
+
+     }
+}
+
+@media only screen and (max-width: 350px) {
+     #form form input{
+          width: 60vw!important;
+          font-size: 1.2rem;
+          /* padding: 2px; */
+          margin-top: 0px!important;
+           
+     }
+     #form .btn{
+          font-size: 1.2rem;
+          margin-left: 50px;
+           
+           
+     }
+     #form h3{
+          font-size: 1.4rem;
+     }
+
+      
+}
+

@@ -1,0 +1,44 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')
+     
+block style
+     style
+       include ../public/static/home.css
+       include ../public/static/style_about.css
+
+block content
+     .contact_banner
+          h2 - About us -
+          h3 We Provide Most Acurate Information To Our Clients.
+     .containers
+          .list_aside
+               h2 Stories
+               ul
+                                   li #[a(href="/about_us") How i started]
+                                   li #[a(href="/my_story") My story]
+                                   li #[a(href="/404blog_source_code") Source code and reference of this website ]
+                                   li #[a(href="/") About 404Blog ]
+                                   li #[a(href="/") About my Blogs ]
+
+                                   
+          .content
+               h2 Source code and reference of this website
+               p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed atque vitae doloremque praesentium dolores dolor nostrum, magnam voluptates aliquam ad rerum suscipit. Harum maiores nemo voluptatem optio odit sint rerum natus et recusandae aliquam nesciunt itaque unde fuga, adipisci voluptates! Ullam fugit, esse repudiandae dolore quis fuga illo placeat minus veniam eos quaerat sunt, eaque, tempora culpa omnis quod nam illum quo numquam expedita a. Delectus nobis et quidem eos atque ipsa dolore, temporibus voluptas. Beatae commodi eaque sunt. Sint itaque autem, obcaecati sunt placeat doloremque dolorem, saepe, blanditiis dolore adipisci consectetur eveniet! Dolorem illo laborum perferendis. Illum nostrum ipsa cumque voluptatibus pariatur sed reprehenderit dolorem, dolor dolores sequi excepturi culpa blanditiis doloremque repudiandae deserunt, accusantium alias! Nam, incidunt similique!
+               p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error optio aliquid, eum perferendis quis vel. Minus illum placeat, exercitationem voluptatibus laborum quasi quisquam rem expedita ad ipsum? Placeat molestias impedit ipsam, facilis provident iure tempora velit libero molestiae dolorum dicta ut doloremque animi suscipit nulla perferendis voluptas itaque aliquid incidunt nisi vero ducimus non minus! Nulla nisi obcaecati rerum quod dolor porro tenetur est ex iure incidunt exercitationem error quidem pariatur ipsum iste maxime inventore quibusdam, tempora maiores ab? Numquam sit, nulla sed tempora dolorum molestias a quos assumenda dolorem eligendi suscipit ut est possimus dicta adipisci aliquid dolores magni explicabo, ea maxime. Eum praesentium possimus consequuntur, odit voluptates distinctio recusandae velit! Molestiae reiciendis explicabo amet ex possimus. Nam!
+          .follow
+               h2 Follow us on
+               #about_aside
+                                        a(href="https://www.instagram.com/ch4nd4n22/") 
+                                             #follows
+                                                  <i class="fa fa-instagram" aria-hidden="true"> Instagram</i>
+                                        a(href="https://www.facebook.com/profile.php?id=100008397492798") 
+                                             #follows
+                                                  <i class="fa fa-facebook" aria-hidden="true"> Facebook</i>
+                                        a(href="https://twitter.com/yo4chandan") 
+                                             #follows
+                                                  <i class="fa fa-twitter" aria-hidden="true"> Twitter</i>
+                                        a(href="/" )
+                                             #follows
+                                                  <i class="fa fa-envelope" aria-hidden="true" fa-4x> Gmail</i>

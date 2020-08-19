@@ -1,0 +1,32 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')
+     
+block style
+     style
+       include ../public/static/home.css
+       include ../public/static/stylecontact.css
+       include ../public/static/stylelogin.css
+
+block content
+     section#container
+          .form
+               form(action="/login", method="POST", class="myForm")
+                         h1 - Login Here -
+                         #text
+                              //- p username
+                              <i class="fa fa-user" aria-hidden="true"></i>
+                              input(type="email" class="email", id="email", name="email", placeholder="Enter Email")
+                         #text
+                              //- p Password
+                              <i class="fa fa-key" aria-hidden="true"></i>
+                              input(type="password", id="password", name="password", placeholder="Enter Password")
+                         br 
+                         a(href="/" id="forgot_password") Forgot Password
+                         br
+                         button(class="btn", id="myButton")
+                              | Login 
+                         .signup
+                              p New user 
+                                   a(href="/signup" id="signup") SignUp 

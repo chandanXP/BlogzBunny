@@ -1,0 +1,35 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')   
+block style
+     style
+       include ../public/static/home.css
+       include ../public/static/stylecontact.css
+
+block content
+     .containers
+          .cons 
+               h1 Contact With Us
+          .midsections
+               #form
+                    h2 Get in Touch
+                    h3 Please fill out quick form and we will be in touch with lightning speed.
+                    form(action="/contact", method="post" class="myForm")
+                         input(type="text" class="myInput", id="myInput", name="name", placeholder="Enter Your Name")
+                         
+                         input(type="email" class="myInput", id="myInput", name="email", placeholder="Enter Your email id")
+                         
+                         input(type="text" class="myInput",  id="myInput", name="desc", placeholder="Enter Your Concern")
+                         button(class="btn", id="myButton")
+                              | submit
+          
+               //-Contact us on other media
+               #other_media
+                    p Other media platform to contact us
+                    p For support or any questions:
+                    a(href="/") imjunior471@gmail.com 
+                    br
+                    a(href="/") twitter.com
+
+           

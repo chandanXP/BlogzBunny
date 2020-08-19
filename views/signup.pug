@@ -1,0 +1,58 @@
+extends base.pug
+
+block scripts
+     script(src='/static/index.js')
+     
+block style
+     style
+       include ../public/static/home.css
+          
+       include ../public/static/style_signup.css
+
+block content
+     .containers
+          #signupbox
+               .heading
+                    i.fa.fa-sign-in(aria-hidden="true")
+                    h1 - Create Your Account -
+               .setaccount
+                    form(action="/signup", method="post")
+                         #signup
+                              //- i.fa.fa-user(aria-hidden="true")
+                              //- p Username
+                              //- input(type="text", placeholder="Choose Unique Username", class="mySignUp", id="mySignUp", name="setUsername")
+
+                              //- i.fa.fa-envelope(aria-hidden="true")
+                              p Your Email
+                              input(type="email", placeholder="Enter Your Email", class="email", id="email", name="email")
+
+                              //- <i class="fa fa-key" aria-hidden="true"></i>
+                              p Password
+                              input(type="password", placeholder="Choose Secure Pasword", class="password", id="password", name="password")
+                         
+                              //- <i class="fa fa-key" aria-hidden="true"></i>
+                              p Confirm Your Password
+                              input(type="password", placeholder="Password Must Be Same As Above Password", class="cpassword", id="cpassword", name="cpassword")
+
+                              //- <i class="fa fa-globe" aria-hidden="true"></i>
+                              //- p  Your Country
+                              //- input(type="text", placeholder="Country/Region", class="mySignUp", id="mySignUp", name="setCountry")
+                              
+                                   
+
+               //- .new           
+               //-      #signup
+               //-           p Gender
+               //-           .radio
+               //-                p Male
+               //-                input(type="radio", class="mySignUp", id="mySignUp", name="setGender")
+               //-                p Female
+               //-                input(type="radio", class="mySignUp", id="mySignUp", name="setGender")
+
+               .creatButtons
+                    button(class="btn", id="myButton")
+                         | Create Account
+
+               .goToLogin
+                    |Already have an account 
+                    a(href="/login") Login   

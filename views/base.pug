@@ -1,0 +1,153 @@
+//- we will inherite the template of this page to other pages
+doctype html
+html
+  head
+    title Welcome | Blogz Bunny  
+    block scripts
+    block meta
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")      
+    block style
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Prociono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    //-Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    link(rel="icon" type="image/x-icon" href="/public/static/logo/favicon.ico")
+  body
+    section#universal
+                    .navbars
+                         .left
+
+                              .mobilemenu
+                              a(href="javascript:void(0);" class="icon"  onclick="getMenu()")
+                                   i.fa.fa-bars    
+
+                              a(href="/")
+                                   img(src="../public/static/logo/blogzbunny.png", alt="Blogz bunny" class="logo")
+                              p Blogz
+
+                              
+                         .mid
+                              nav
+                                   ul
+                                        li
+                                             a.active(href="/") Home
+                                             a(href="/about_us") About Us
+                                             a(href="/bankingApp") Blogs
+                                             a(href="/contact") Contact Us
+                                         
+                         .right
+                              a(href="/login") 
+                                   |Login
+                                   #icon
+                                        svg.bi.bi-people-circle(width='1.5em' height='1.5em'   viewbox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                                             path(d='M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 008 15a6.987 6.987 0 005.468-2.63z')
+                                             path(fill-rule='evenodd' d='M8 9a3 3 0 100-6 3 3 0 000 6z' clip-rule='evenodd')
+                                             path(fill-rule='evenodd' d='M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8z' clip-rule='evenodd')
+
+                    .downNav#downNav
+                              ul
+                                   li
+                                        a(href="javascript:void(0);"  onclick="endMenu()")
+                                             i.fa.fa-times
+                                        a(href="/") Home
+                                        a(href="/about_us") About
+                                        a(href="/bankingApp") Blogs
+                                        a(href="/contact") Contact     
+                         
+
+                                        
+    block content
+    script.
+      function getMenu(){
+      //on haburger icon
+      document.getElementById("downNav").style.width="250px";
+      }
+      
+      function endMenu(){
+      //on cross icon
+      document.getElementById("downNav").style.width="0px";
+      }
+     
+    
+      
+      
+          
+    footer#foot 
+         p Copy Right By Blue Media / Ocean Blogs Ltd 2020 | All Rights Reserved .
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+//- //which is layout of page and we will use inhertence of this layout to other pages
+//- //- layout.pug
+//- doctype html
+//- html
+//-   head
+//-     title Welcome To Dancex 
+//-     block scripts
+//-     block style
+  
+//-   body
+//-     block content
+//-      nav#navbar
+//-         ul
+//-             div#logo
+//-                 img(src="/static/img/DanceLogo.png")
+//-                 | HDA
+//-             li #[a(href="/") Home]
+//-             li #[a(href="/") About]
+//-             li #[a(href="/") Services]
+//-             li #[a(href="/") Class Info]
+//-             li #[a(href="/contact") Contact Us]
+                                        
+
+

@@ -122,3 +122,120 @@
       transition: 0.4s;
       
 }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1470px) {
+     #signupbox{
+          margin-top: 200px; 
+          width: 80vw;
+          height: auto;     
+     }
+     .setaccount input{      
+          width: 100%;  
+     }
+}
+
+@media only screen and (max-width: 920px) {
+     .containers{     
+          height: 100vh;    
+     }
+     #signupbox{
+          margin-top: 100px;
+          width: 65vw;
+          height: 55vh;
+     }
+     .setaccount input{      
+          width: 100%;     
+     }
+}
+
+/* @media only screen and (max-height: 1060px) {
+     #signupbox{
+          margin-top: 100px;
+          width: 65vw;
+          height: auto;
+     }
+
+} */
+
+/* reduce font size */
+
+@media only screen and (max-width: 500px) {
+
+     .containers{      
+          height: 130vh;    
+     }
+     #signupbox{      
+          width: 80vw;
+          height: auto;      
+     }
+     #signupbox .heading h1{   
+          font-size: 20px;     
+     }
+     #signupbox .heading i{   
+          font-size: 25px;     
+     }
+     .setaccount input{    
+          width: 100%;    
+     }
+}
+
+@media only screen and (max-height: 840px) {
+
+     .containers{      
+          height: 150vh;    
+     }
+     #signupbox{      
+           
+          height: fit-content;      
+     }
+
+}
+
+
+@media only screen and (max-height: 534px) and (max-width:400px) {
+     
+     #signupbox{
+          margin-top: 30px;
+          width: 80vw;
+          height: auto;
+          padding: 20px;
+     }
+     .setaccount #signup p{
+          font-size: 14px;
+          
+     }
+     .creatButtons .btn{
+          width: 120px;
+          font-size: 12px;
+          padding: 2px;
+
+     }
+     .goToLogin{
+          font-size: 14px;
+     }
+     .goToLogin a{
+          font-size: 14px;
+     }
+
+}
+
+@media only screen and (max-width:330px) {
+
+     .setaccount #signup p{
+          font-size: 12px;
+          
+     }
+     .creatButtons .btn{
+          width: 80px;
+          font-size: 8px;
+          padding: 2px;
+     }
+     .goToLogin{
+          font-size: 12px;
+     }
+     .goToLogin a{
+          font-size: 12px;
+     }
+}

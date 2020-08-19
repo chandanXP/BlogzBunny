@@ -16,6 +16,7 @@
      padding-top: 25px;
      margin-top: 75px;
 
+
 }
 
 .navbars{
@@ -29,20 +30,38 @@
      top: 0; 
      position: fixed;
      overflow: hidden;
-     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.7);
+     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.7); 
 }
 .navbars a{
      color: white;
 
 }
+
+.icon{
+     margin: auto 20px;
+     font-size: 1.8rem;
+     font-family: 'Titillium Web', sans-serif;
+     /* display: none; */
+}
+
+.icon i :hover{
+     color: red ;
+     transition: all 0.5s ease;
+     /* background-color: red; */
+     font-family: 'Titillium Web', sans-serif;
+
+}
+ 
+
 .left{
      display: flex;
      margin-left: 20px;
 }
-.left img{
+.left .logo{
      height: 40px;
      width: 40px;
-     margin:  15px 0px 0px 0px;
+     margin:  15px 0px 0px 10px;
+      
      filter: invert(100%);
 }
 .left p{
@@ -121,6 +140,72 @@ a.new:visited{
 
      
 }
+
+
+.downNav{
+     /* margin-top: 75px; */
+     /* border: 2px solid blueviolet; */
+     /* display: none; */
+     /* overflow: hidden; */
+     width: 0px;
+     /* top:0; */
+     left: 0;
+     height: 100%;
+     position: fixed;
+     /* background-color: #1f456e; */
+     /* background-color: #59788E; */
+     background-color: #1BA098;
+      
+     z-index: 5;
+     overflow-x: hidden;
+     transition: all 0.5s;
+     /* animation: menu 1 0.3 0 1 ease-in forwards; */
+     /* animation-name: example; */
+     /* animation-duration: 4s;  */
+     /* animation-fill-mode: forwards; */
+     scrollbar-width: none;
+     box-shadow: 4px 0 8px rgba(0, 0, 0, 0.3); 
+
+
+}
+ 
+.downNav li {
+     /* display:flex; */
+     flex-direction: column;
+     /* border: 2px solid green; */
+     /* z-index: 10; */
+     /* margin-top: 75px; */
+     display: block;
+     /* position: fixed; */
+     margin-top: 30px;
+
+
+}
+
+.downNav ul li a{
+     /* display:flex; */
+     display: block;
+     flex-direction: column;
+     /* margin: 8px; */
+     margin-left: 35px;
+     /* border: 2px solid red; */
+     font-size: 1.6rem;
+     padding: 5px;
+     color: white;
+     text-decoration: none;
+     border-bottom: 1px solid rgba(100, 100, 100, 0.3);
+     /* z-index: 10; */
+     /* margin-top: 75px; */
+     font-family: 'Titillium Web', sans-serif;
+
+
+}
+
+.downNav ul li a:hover{
+     color: rgba(255, 255, 255, 0.7);
+
+
+}
  
 /* hr */
 hr{
@@ -149,13 +234,14 @@ hr .h2{
 }
 .banner p{
      /* background: center / center no-repeat; */
-     font-size: 4.0rem;
+     font-size: 3.2rem;
      font-family: 'Prociono', serif;
      margin: auto;
      text-align: center;
      justify-items: center;
      margin-top: 20px;
      color:#1f456e ;
+     padding: 20px;
    
       
 }
@@ -396,13 +482,244 @@ hr .h2{
      font-family: 'Titillium Web', sans-serif;
      position: relative;
      box-shadow: 4px 0 8px rgba(0, 0, 0, 0.7);
-
-     /* bottom: 30px; */
-     /* z-index: 10; */
-     /* bottom: 60px; */
+     bottom: 0px;
      
 }
 /* #051622 #1BA098 #DEB992 */
+
+
+
+/* MEDIA QUERIES */
+
+/* @media only screen and (max-width: 600px) {
+     .blogpost {
+       background-color: blue;
+       
+     }
+   } */
+/* max-width: 600, matlab 600px se choti screen pe change dikhega */
+@media only screen and (max-width: 920px) {
+     #couniversal{
+          height: 240vh;
+          padding: 10px;
+          /* height: auto; */
+
+     }
+     .mid {
+          display: none;
+       
+     }
+     .navbars {
+          height: 110px;
+          /* border: 2px solid red; */
+       
+     }
+     .icon {
+          font-size: 2.8rem;
+          
+           
+
+     }
+
+     .navbars .left p{
+          font-size: 2.5rem;
+         
+     }
+
+     .navbars .left .logo{
+          height: 60px;
+          width: 60px;
+          margin-left: 20px;
+          margin-top: 25px;
+         
+     }
+
+     .right a{
+          font-size: 1.8rem;
+          margin-right: 35px;
+     }
+     .downNav{
+          top: 110px;
+     }
+     .banner{
+          margin-top: 36px;
+          width: auto;
+          height: 170px;
+          margin-left: 25px;
+          margin-right: 25px;
+          /* margin: auto; */
+          align-items:center;
+            
+     }
+     .banner p {
+          font-size: 2.6rem;
+          margin-top: 15px;
+          padding: 30px;
+     }
+
+     .searchbar{
+          display: none;
+     }
+     #bodycontent{
+          flex-direction: column;
+          height: 140vh;
+          /* height: auto; */
+     }
+     .blogpost{
+          width: auto;
+          height: auto;
+          /* margin: 2px; */
+          margin: auto;
+          margin-left: 25px;
+          margin-top: 20px;
+          margin-right: 25px;
+          padding: 30px;
+ 
+     }
+
+     .blogpost img{
+          width: 100%;
+          margin: auto;
+ 
+     }
+     .aside #socials{
+          width: 90vw;
+          /* margin: auto; */
+          height: 15vh;
+          margin-left: 25px;
+          margin-right: 25px;
+     }
+
+      
+
+     #foot{
+          height: 10vh;
+          font-size: 0.8rem;
+     }
+
+
+   }
+
+   
+
+
+   @media only screen and (max-width: 500px) {
+     #couniversal{
+          height: 200vh;
+          padding: 0px;
+          /* height: auto; */
+
+     }
+     .navbars{
+          height: 80px;
+     }
+     .icon {
+          font-size: 2.0rem;
+          
+           
+
+     }
+
+     .navbars .left p{
+          font-size: 1.8rem;
+         
+     }
+
+     .navbars .left .logo{
+          height: 30px;
+          width: 30px;
+          margin-left: 5px;
+          margin-top: 25px;
+         
+     }
+
+     .right a{
+          font-size: 1.4rem;
+          margin-right: 2px;
+     }
+     .downNav{
+          top: 80px;
+     }
+
+     .downNav a{
+          font-size: 1.4rem;
+     }
+
+     .banner p {
+          font-size: 1.8rem;
+          margin-top: 15px;
+          padding: 30px;
+     }
+
+     .blogpost {
+          padding: 10px;
+     }
+     .blogpost h2{
+          font-size: 1.4rem;
+     }
+
+     .blogpost p{
+          font-size: 1.0rem;
+     }
+
+     #foot{
+          font-size: 0.5rem;
+          padding: 40px;
+          bottom: 0;
+          margin-bottom: 0px;
+     }
+     .aside #socials{
+          width: 90vw;
+          height: 140px;
+           
+     }
+     .aside #socials p{
+          font-size: 1.4rem;
+           
+     }
+     .aside #socials i{
+          font-size: 2.0rem;
+           
+     }
+   }
+   @media only screen and (max-width: 350px) {
+
+     .navbars{
+          padding: 0px;
+     }
+     .right a{
+          font-size: 1.0rem;
+          margin-right: 1px;
+           
+     }
+     .navbars .left p{
+          font-size: 1.4rem;
+         
+     }
+
+     .navbars .left .logo{
+          height: 25px;
+          width: 25px;
+          margin-left: 5px;
+          margin-top: 25px;
+         
+     }
+
+     .icon {
+          font-size: 1.6rem;
+          
+           
+
+     }
+
+   }
+
+
+
+ 
+
+  
+
 
 
     

@@ -1,0 +1,331 @@
+extends base.pug
+
+block scripts
+     script(src='/public/static/index.js')
+  
+block style
+     style 
+          include ../public/static/home.css
+          include ../public/static/stylebankingApp.css
+
+block content
+      .banners
+        p ” One of the greatest advantages of chess over other sports is that you can always resign.” 
+        .author
+          p – Joe Gallagher
+      .body
+        .blogs
+          ul
+            li 
+              a(href="#") Experiments 
+              a(href="#") Scroll Bar
+              a(href="#") Quetion Paper App
+              a(href="#") Classes In Java
+              a(href="#") Sample 5
+              a(href="#") Sample 6
+              a(href="#") Sample 7
+              a(href="#") Sample 8
+              a(href="#") Sample 9
+        .content
+          .para
+            h2  Banking application project using JAVA-OOP.
+            hr#hr
+            p We have made a Banking application using Object Oreinted Programming(OOP) in Java. Baically it is a mini project 
+            |with the basics of Object Oriented Programing in Java. The application run on some rules in which user have to enter
+            |his account number to get acess to the app if user is new then he have to enter his name to create a new account.
+            |If you intered you number then it will welcomes you and ask for the transactions and at the last you can exit to the
+            |app by reponding "Exit".  
+            |user can do transactions by giving responses to the console pannel of the editor and the resposes will be in numbers(1,2,3,4)
+            |and user have to enter the number with respect to their requirement. User can add, withdraw, and check balance of his account.
+            |This application is made to understand the basics of methode overriding, constructors, use of class in Java.      
+            
+            hr#hr
+            h4 Requirements
+            p We used IntelliJ Idea community edition, the code editor to run our Java Programs with Java development kit(JDK).
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim neque nam suscipit assumenda. Esse odit repellendus,
+            sed ab aperiam rem amet vitae.
+             
+          h4 Codes
+          .codes
+            pre
+            code
+                br
+                .text-alert| package BankingApplication;
+                br
+                br
+                br
+                .text-danger|       import java.sql.SQLOutput;
+                br
+                .text-danger|       import java.util.Scanner;
+                br
+                br
+                .text-success|       public class StateBankOfIndia {
+                br
+                .text-success|       public static void main(String []args)
+                br
+                |       {
+                br
+                .text-muted|       //TODO
+                br
+                |       BankAccount chandan=new BankAccount("Chandan","20110212805");
+                br
+                .text-info|       chandan.ShowMenu();
+                br
+                |       }
+                br
+                |       }
+                br
+                .text-info|       class BankAccount
+                br
+                |       {
+                br
+                .text-secondary|       int Balance;
+                br
+                .text-secondary|       int PreviousTransaction;
+                br
+                .text-secondary|       String CustomerId;
+                br
+                .text-secondary|       String CustomerName;
+                br
+                .text-secondary|       public int Amount;
+                br
+                .text-info|       BankAccount(String name, String cid)
+                br
+                .text-info|       {
+                br
+                |       CustomerName=name;
+                br
+                |       CustomerId=cid;
+                br
+                .text-info|       }
+                br
+                br
+                .text-info|       void deposit(int Amount)
+                br
+                .text-info|       {
+                br
+                |       if (Amount != 0) {
+                br
+                |       Balance = Balance + Amount;
+                br
+                |       PreviousTransaction = Amount;
+                br
+                |       }
+                br
+                .text-info|       }
+                br
+                .text-info|       void Withdraw(int Amount)
+                br
+                .text-info|       {
+                br
+                |       if (Amount != 0)
+                br
+                |       {
+                br
+                |       Balance = Balance - Amount;
+                br
+                |       PreviousTransaction = -Amount;
+                br
+                |       }
+                br
+                .text-info|       }
+                br
+                .text-info|       void GetPreviousTransaction() {
+                br
+                |       if (PreviousTransaction > 0) {
+                br
+                |       System.out.println("Deposited: " + PreviousTransaction);
+                br
+                |       } else if (PreviousTransaction < 0) {
+                br
+                |       System.out.println("Withdrawn" + Math.abs(PreviousTransaction));
+                .text-muted|  //abs will give the positive value.
+                br
+                |       } else {
+                br
+                |       System.out.println("No transaction occurred!!");
+                br
+                |       }
+                br
+                .text-info|       }
+                br
+                .text-info|       void ShowMenu() {
+                br
+                |       char option = '0';
+                .text-muted|//initialize the value to zero.
+                br
+                |       Scanner input = new Scanner(System.in);
+                br
+                |       System.out.println("Welcome " + CustomerName);
+                br
+                |       System.out.println("n");
+                br
+                |       System.out.println(CustomerId);
+                br
+                |       System.out.println("(A) for check Balance.");
+                br
+                |       System.out.println("(B) for Deposit");
+                br
+                |       System.out.println("(C) for Withdraw");
+                br
+                |       System.out.println("(D) for Previous Transaction");
+                br
+                |       System.out.println("(E) for Exit");
+                br
+                br
+                |       do {
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       System.out.println("Enter The option");
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       option = input.next().charAt(0);
+                br
+                |       System.out.println("n");
+                br
+                |       switch (option) {
+                br
+                |       case 'A':
+                br
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       System.out.println("Your updated balance is: ");
+                br
+                |       System.out.println("Balance: " + Balance);
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       System.out.println("n");
+                br
+                |       break;
+                br
+                |       case 'B':
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       System.out.println("Enter an amount to deposit: ");
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       int Amount = input.nextInt();
+                br
+                .text-info|       deposit(Amount);
+                br
+                |       System.out.println("Congratulations you have deposited " + Amount + " Rs successfully.");
+                br
+                |       System.out.println("n");
+                br
+                |       break;
+                br
+                |       case 'C':
+                br
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       System.out.println("Enter an amount to Withdraw:");
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       int Amount2 = input.nextInt();
+                br
+                .text-info|       Withdraw(Amount2);
+                br
+                |       System.out.println("Withdraw Successful! your updated balance is " + Amount2 + " Rs.");
+                br
+                |       System.out.println("n");
+                br
+                |       break;
+                br
+                |       case 'D':
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       System.out.println("Previous Transactions of your account.");
+                br
+                |       System.out.println("n");
+                br
+                .text-info|       GetPreviousTransaction();
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       System.out.println("n");
+                br
+                |       break;
+                br
+                |       case 'E':
+                br
+                |       System.out.println("-----------------------------------------------------------------------------");
+                br
+                |       break;
+                br
+                |       default:
+                br
+                |       System.out.println("Invalid Option!!,Please Enter Again");
+                br
+                |       break;
+                br
+                br
+                br
+                br
+                |       }
+                br
+                |       }
+                br
+                |       while (option != 'E') ;
+                br
+                |       System.out.println("Thanks for using our service");
+                br
+                br
+                br
+                |       }
+                br
+                br
+                .text-info|       }
+                br
+                br
+                br 
+                
+                
+          br
+          h4 Results
+          .outputs
+            p File paths of App:
+            img(src="/public/static/bankingApp/javabankapp.PNG", alt="File paths of app" class="ui")
+            br
+            br
+            p Home screen of app: 
+            img(src="/public/static/bankingApp/UiBankApp.PNG", alt="Home screen of page" class="ui")
+            br
+            br
+            p All transactions:
+            img(src="/public/static/bankingApp/TransxBankingApp.PNG", alt="Transaction of app")
+            br
+            br
+            p End of transations:
+            img(src="/public/static/bankingApp/ExitBankingApp.PNG", alt="End task of app")
+            br
+            br
+
+            
+        .socials
+          h2 Follow us on:
+                    #about_aside
+                      a(href="https://www.instagram.com/ch4nd4n22/") 
+                          #follows
+                                <i class="fa fa-instagram" aria-hidden="true"> Instagram</i>
+                      a(href="https://www.facebook.com/profile.php?id=100008397492798") 
+                          #follows
+                                <i class="fa fa-facebook" aria-hidden="true"> Facebook</i>
+                      a(href="https://twitter.com/yo4chandan") 
+                          #follows
+                                <i class="fa fa-twitter" aria-hidden="true"> Twitter</i>
+                      a(href="/" )
+                          #follows
+                                <i class="fa fa-envelope" aria-hidden="true" fa-4x> Gmail</i>
+
+
+   
+ 

@@ -1,0 +1,81 @@
+extends base.pug
+
+block scripts
+     script(src='/public/main.js')
+     
+block style
+     style
+       include ../public/static/home.css
+       include ../public/static/style_about.css
+     link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css")
+
+block content
+     section.universal
+          .contact_banner
+               h2 - About us -
+               h3 We Provide Most Acurate Information To Our Clients.
+          
+               .share-btn-container
+                    a.facebook-btn(href="#")
+                         i.fab.fa-facebook
+                    a.twitter-btn(href="#")
+                         i.fab.fa-twitter
+                    a.pinterest-btn(href="#")
+                         i.fab.fa-pinterest
+                    a.linkedin-btn(href="#")
+                         i.fab.fa-linkedin
+                    a.whatsapp-btn(href="#")
+                         i.fab.fa-whatsapp
+
+          .containers
+
+               .list_aside
+                    h2 Stories
+                    ul
+                                        li #[a(href="/about_us") How i started]
+                                        li #[a(href="/my_story") My story]
+                                        li #[a(href="/404blog_source_code") Source code]
+                                        li #[a(href="/") About web ]
+                                        li #[a(href="/") About Blogs ]
+
+                                        
+               .content
+                    h2 How i started
+                    p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed atque vitae doloremque praesentium dolores dolor nostrum, magnam voluptates aliquam ad rerum suscipit. Harum maiores nemo voluptatem optio odit sint rerum natus et recusandae aliquam nesciunt itaque unde fuga, adipisci voluptates! Ullam fugit, esse repudiandae dolore quis fuga illo placeat minus veniam eos quaerat sunt, eaque, tempora culpa omnis quod nam illum quo numquam expedita a. Delectus nobis et quidem eos atque ipsa dolore, temporibus voluptas. Beatae commodi eaque sunt. Sint itaque autem, obcaecati sunt placeat doloremque dolorem, saepe, blanditiis dolore adipisci consectetur eveniet! Dolorem illo laborum perferendis. Illum nostrum ipsa cumque voluptatibus pariatur sed reprehenderit dolorem, dolor dolores sequi excepturi culpa blanditiis doloremque repudiandae deserunt, accusantium alias! Nam, incidunt similique!
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut error optio aliquid, eum perferendis quis vel. Minus illum placeat, exercitationem voluptatibus laborum quasi quisquam rem expedita ad ipsum? Placeat molestias impedit ipsam, facilis provident iure tempora velit libero molestiae dolorum dicta ut doloremque animi suscipit nulla perferendis voluptas itaque aliquid incidunt nisi vero ducimus non minus! Nulla nisi obcaecati rerum quod dolor porro tenetur est ex iure incidunt exercitationem error quidem pariatur ipsum iste maxime inventore quibusdam, tempora maiores ab? Numquam sit, nulla sed tempora dolorum molestias a quos assumenda dolorem eligendi suscipit ut est possimus dicta adipisci aliquid dolores magni explicabo, ea maxime. Eum praesentium possimus consequuntur, odit voluptates distinctio recusandae velit! Molestiae reiciendis explicabo amet ex possimus. Nam!
+                    br
+                    img(src="/public/static/img/primary_hugo.png", alt="Primary Hugo")
+                    
+                    h2 History of logo
+                    p 
+                         Numerous inventions and techniques have contributed to the contemporary logo, including cylinder seals (c. 2300 BCE), coins (c. 600 BCE),[7][8] trans-cultural diffusion of logographic languages, coats of arms,[9] watermarks,[10] silver hallmarks, and the development of printing technology.
+
+                         As the industrial revolution converted western societies from agrarian to industrial in the 18th and 19th centuries, photography and lithography contributed to the boom of an advertising industry that integrated typography and imagery together on the page.[11] Simultaneously, typography itself was undergoing a revolution of form and expression that expanded beyond the modest, serif typefaces used in books, to bold, ornamental typefaces used on broadsheet posters.[12]
+
+                         The arts were expanding in purpose—from expression and decoration of an artistic, storytelling nature, to a differentiation of brands and products that the growing middle classes were consuming. Consultancies and trades-groups in the commercial arts were growing and organizing; by 1890, the US had 700 lithographic printing firms employing more than 8,000 people.[13] Artistic credit tended to be assigned to the lithographic company, as opposed to the individual artists who usually performed less important jobs.
+
+
+                         A coin from early 6th century BC Lydia bearing the head of a roaring lion with sun rays
+                         Innovators in the visual arts and lithographic process—such as French printing firm Rouchon in the 1840s, Joseph Morse of New York in the 1850s, Frederick Walker of England in the 1870s, and Jules Chéret of France in the 1870s—developed an illustrative style that went beyond tonal, representational art to figurative imagery with sections of bright, flat colors.[13] Playful children's books, authoritative newspapers, and conversational periodicals developed their own visual and editorial styles for unique, expanding audiences. As printing costs decreased, literacy rates increased, and visual styles changed, the Victorian decorative arts led to an expansion of typographic styles and methods of representing businesses.[14]
+
+
+                         The first logo to be trademarked was the Bass red triangle in 1876
+                         The Arts and Crafts Movement of late-19th century, partially in response to the excesses of Victorian typography, aimed to restore an honest sense of craftsmanship to the mass-produced goods of the era.[15] A renewal of interest in craftsmanship and quality also provided the artists and companies with a greater interest in credit, leading to the creation of unique logos and marks.
+
+                         By the 1950s, Modernism had shed its roots as an avant-garde artistic movement in Europe to become an international, commercialized movement with adherents in the United States and elsewhere. The visual simplicity and conceptual clarity that were the hallmarks of Modernism as an artistic movement formed a powerful toolset for a new generation of graphic designers whose logos embodied Ludwig Mies van der Rohe’s dictum, "Less is more." Modernist-inspired logos proved successful in the era of mass visual communication ushered in by television, improvements in printing technology, and digital innovations.
+               
+               .follow
+                    h2 Follow us on:
+                    #about_aside
+                         a(href="https://www.instagram.com/ch4nd4n22/") 
+                              #follows
+                                   <i class="fa fa-instagram" aria-hidden="true"> Instagram</i>
+                         a(href="https://www.facebook.com/profile.php?id=100008397492798") 
+                              #follows
+                                   <i class="fa fa-facebook" aria-hidden="true"> Facebook</i>
+                         a(href="https://twitter.com/yo4chandan") 
+                              #follows
+                                   <i class="fa fa-twitter" aria-hidden="true"> Twitter</i>
+                         a(href="/" )
+                              #follows
+                                   <i class="fa fa-envelope" aria-hidden="true" fa-4x> Gmail</i>
